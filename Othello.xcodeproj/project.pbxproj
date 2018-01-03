@@ -12,6 +12,7 @@
 		63ABFD221FFC1A7D00CCBB73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ABFD201FFC1A7D00CCBB73 /* Main.storyboard */; };
 		63ABFD241FFC1A7D00CCBB73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63ABFD231FFC1A7D00CCBB73 /* Assets.xcassets */; };
 		63ABFD271FFC1A7D00CCBB73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63ABFD251FFC1A7D00CCBB73 /* LaunchScreen.storyboard */; };
+		63B880B51FFD578900F6854D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B880B41FFD578900F6854D /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		63ABFD231FFC1A7D00CCBB73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63ABFD261FFC1A7D00CCBB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63ABFD281FFC1A7D00CCBB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B880B41FFD578900F6854D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		63ABFD1B1FFC1A7D00CCBB73 /* Othello */ = {
 			isa = PBXGroup;
 			children = (
+				63B880B41FFD578900F6854D /* RoundButton.swift */,
 				63ABFD1C1FFC1A7D00CCBB73 /* AppDelegate.swift */,
 				63ABFD1E1FFC1A7D00CCBB73 /* ViewController.swift */,
 				63ABFD201FFC1A7D00CCBB73 /* Main.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B880B51FFD578900F6854D /* RoundButton.swift in Sources */,
 				63ABFD1F1FFC1A7D00CCBB73 /* ViewController.swift in Sources */,
 				63ABFD1D1FFC1A7D00CCBB73 /* AppDelegate.swift in Sources */,
 			);
