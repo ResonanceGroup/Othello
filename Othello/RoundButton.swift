@@ -19,6 +19,14 @@ class RoundButton: UIButton
         // Drawing code
     }
     */
+    
+    private var p_tilePosition: CGPoint
+    
+    required init?(coder: NSCoder) {
+        p_tilePosition = CGPoint(x: 0, y: 0)
+        super.init(coder: coder)
+    }
+    
     var cornerRadius: CGFloat = 0
     {
         didSet
