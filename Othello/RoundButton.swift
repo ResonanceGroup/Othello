@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 @IBDesignable
 class RoundButton: UIButton
@@ -26,6 +27,9 @@ class RoundButton: UIButton
     {
         p_tilePosition = CGPoint(x: 0, y: 0)
         super.init(frame: frame)
+        p_tilePosition.x = round(self.layer.position.x / (self.frame.size.width + 8.0))// The 8 here is the standard spacing between sibling views
+        
+        p_tilePosition.y = round(self.layer.position.y / (self.frame.size.height + 8.0))
     }
     
     required init?(coder: NSCoder) {
