@@ -22,6 +22,12 @@ class RoundButton: UIButton
     
     private var p_tilePosition: CGPoint
     
+    override init(frame: CGRect)
+    {
+        p_tilePosition = CGPoint(x: 0, y: 0)
+        super.init(frame: frame)
+    }
+    
     required init?(coder: NSCoder) {
         p_tilePosition = CGPoint(x: 0, y: 0)
         super.init(coder: coder)
