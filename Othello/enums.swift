@@ -13,3 +13,9 @@ enum Player{
     case blackPlayer
     case whitePlayer
 }
+
+enum TileState{
+    case neutral
+    case black
+    case white
+}

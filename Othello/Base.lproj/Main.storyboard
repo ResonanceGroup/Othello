@@ -21,10 +21,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-uA-Yul">
-                                <rect key="frame" x="16" y="655.33333333333337" width="156.66666666666666" height="60.666666666666629"/>
+                                <rect key="frame" x="16" y="655.33333333333337" width="155.66666666666666" height="60.666666666666629"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zi3-N3-QAA">
-                                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="26.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="155.66666666666666" height="26.333333333333332"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White Pieces: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI8-xI-Tq7">
                                                 <rect key="frame" x="0.0" y="0.0" width="134.66666666666666" height="26.333333333333332"/>
@@ -32,8 +32,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-Tu-5ks">
-                                                <rect key="frame" x="142.66666666666666" y="0.0" width="14" height="26.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-Tu-5ks">
+                                                <rect key="frame" x="142.66666666666666" y="0.0" width="13" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GGL-9L-ZQU">
-                                        <rect key="frame" x="0.0" y="34.333333333333258" width="156.66666666666666" height="26.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="34.333333333333258" width="155.66666666666666" height="26.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Black Pieces: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grP-iJ-fi1">
                                                 <rect key="frame" x="0.0" y="0.0" width="134.66666666666666" height="26.333333333333332"/>
@@ -49,8 +49,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSe-hd-olT">
-                                                <rect key="frame" x="142.66666666666666" y="0.0" width="14" height="26.333333333333332"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSe-hd-olT">
+                                                <rect key="frame" x="142.66666666666666" y="0.0" width="13" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -661,7 +661,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grM-Qf-eFg" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
-                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="grM-Qf-eFg" secondAttribute="height" multiplier="1:1" id="v3p-b4-5h6"/>
                                                 </constraints>
@@ -682,7 +682,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPD-B8-6nC" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
-                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RPD-B8-6nC" secondAttribute="height" multiplier="1:1" id="rhf-ay-RBo"/>
                                                 </constraints>
@@ -837,7 +837,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-Gc-r8m" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
-                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xdy-Gc-r8m" secondAttribute="height" multiplier="1:1" id="luV-kP-VPg"/>
                                                 </constraints>
@@ -858,7 +858,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1O-70-0wa" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
-                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="C1O-70-0wa" secondAttribute="height" multiplier="1:1" id="eiN-RK-IUc"/>
                                                 </constraints>
@@ -1476,6 +1476,9 @@
                                 <rect key="frame" x="229" y="659" width="161" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="touchReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsc-qQ-bDF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1492,6 +1495,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="p_blackPiecesText" destination="ZSe-hd-olT" id="QhQ-a8-8F8"/>
+                        <outlet property="whitePiecesText" destination="o4i-Tu-5ks" id="FFk-rW-zem"/>
                         <outletCollection property="othelloButton" destination="jOt-NN-iys" collectionClass="NSMutableArray" id="iFy-KR-9Yv"/>
                         <outletCollection property="othelloButton" destination="wuC-2l-bfb" collectionClass="NSMutableArray" id="2q1-FQ-ZK5"/>
                         <outletCollection property="othelloButton" destination="KCp-Ks-ycG" collectionClass="NSMutableArray" id="iqh-Iu-q27"/>

@@ -46,6 +46,15 @@ class RoundButton: UIButton
         }
     }
     
+    @IBInspectable var currentState: tileState = .neutral{
+        didSet{
+            switch currentState{
+            case neutral:
+                
+            }
+        }
+    }
+    
     var cornerRadius: CGFloat = 0
     {
         didSet
