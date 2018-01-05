@@ -25,18 +25,16 @@ class ViewController: UIViewController {
   
     
     @IBAction func touchButton(_ sender: RoundButton) {
-    updateButtonColor()
-    }
-
-    private func updateButtonColor()
-    {
-        for index in othelloButton.indices
-        {
-        let button =  othelloButton[index]
+        if(sender.backgroundColor == #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)){
+            switch p_player{
+            case .blackPlayer:
+                sender.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                p_player = .whitePlayer
+            case .whitePlayer:
+                sender.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                p_player = .blackPlayer
+            }
         }
-        //hmmmm123123
-        button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
-        
     }
 }
 
