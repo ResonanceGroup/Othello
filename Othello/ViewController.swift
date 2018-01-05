@@ -22,9 +22,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
+        for button in othelloButton{
+            button.setTilePosition()
+            
+            switch button.p_tilePosition{
+            case CGPoint(x: 3, y: 3), CGPoint(x: 4, y: 4):
+                button.currentState = .white
+            case CGPoint(x: 4, y: 3), CGPoint(x: 3, y: 4):
+                button.currentState = .black
+            default:
+                break
+            }
+        }
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,15 +46,18 @@ class ViewController: UIViewController {
     
     @IBOutlet var othelloButton: [RoundButton]!
   
-    
     @IBAction func touchButton(_ sender: RoundButton) {
-        if(sender.backgroundColor == #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)){
+        if(sender.currentState == .neutral){
             switch p_player{
             case .blackPlayer:
-                sender.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                sender.currentState = .black
+                p_blackCount += 1
+                p_blackPiecesText.text = String(p_blackCount)
                 p_player = .whitePlayer
             case .whitePlayer:
-                sender.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                sender.currentState = .white
+                p_whiteCount += 1
+                whitePiecesText.text = String(p_whiteCount)
                 p_player = .blackPlayer
             }
         }
@@ -50,6 +66,14 @@ class ViewController: UIViewController {
     @IBAction func touchReset(_ sender: UIButton) {
         for button in othelloButton{
             
+            switch button.p_tilePosition{
+            case CGPoint(x: 3, y: 3), CGPoint(x: 4, y: 4):
+                button.currentState = .white
+            case CGPoint(x: 4, y: 3), CGPoint(x: 3, y: 4):
+                button.currentState = .black
+            default:
+                button.currentState = .neutral
+            }
         }
         
         p_player = .blackPlayer
@@ -60,5 +84,4 @@ class ViewController: UIViewController {
         p_blackPiecesText.text = String(p_blackCount)
     }
 }
-
 

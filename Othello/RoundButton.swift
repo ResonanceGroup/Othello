@@ -21,19 +21,15 @@ class RoundButton: UIButton
     }
     */
     
-    private var p_tilePosition: CGPoint
+    public private(set) var p_tilePosition = CGPoint(x: -1, y: -1)
     
     override init(frame: CGRect)
     {
-        p_tilePosition = CGPoint(x: 0, y: 0)
         super.init(frame: frame)
-        setTilePosition()
     }
     
     required init?(coder: NSCoder) {
-        p_tilePosition = CGPoint(x: 0, y: 0)
         super.init(coder: coder)
-        setTilePosition()
     }
     
     func setTilePosition(){
@@ -46,11 +42,15 @@ class RoundButton: UIButton
         }
     }
     
-    @IBInspectable var currentState: tileState = .neutral{
+    var currentState: TileState = .neutral{
         didSet{
             switch currentState{
-            case neutral:
-                
+            case .neutral:
+                self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+            case .black:
+                self.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            case .white:
+                self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             }
         }
     }
