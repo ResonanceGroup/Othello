@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,23 +17,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Othello" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-uA-Yul">
-                                <rect key="frame" x="16" y="586" width="157" height="61"/>
+                                <rect key="frame" x="16" y="655.33333333333337" width="156.66666666666666" height="60.666666666666629"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zi3-N3-QAA">
-                                        <rect key="frame" x="0.0" y="0.0" width="157" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="26.333333333333332"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White Pieces: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI8-xI-Tq7">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.66666666666666" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4i-Tu-5ks">
-                                                <rect key="frame" x="143" y="0.0" width="14" height="26.5"/>
+                                                <rect key="frame" x="142.66666666666666" y="0.0" width="14" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -41,16 +41,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GGL-9L-ZQU">
-                                        <rect key="frame" x="0.0" y="34.5" width="157" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="34.333333333333258" width="156.66666666666666" height="26.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Black Pieces: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grP-iJ-fi1">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="134.66666666666666" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSe-hd-olT">
-                                                <rect key="frame" x="143" y="0.0" width="14" height="26.5"/>
+                                                <rect key="frame" x="142.66666666666666" y="0.0" width="14" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -60,13 +60,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3KP-qB-JRr">
-                                <rect key="frame" x="23" y="20" width="328" height="328"/>
+                                <rect key="frame" x="23" y="20" width="367" height="367"/>
                                 <subviews>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0en-Fs-L6z">
-                                        <rect key="frame" x="0.0" y="0.0" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="39"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOt-NN-iys" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jOt-NN-iys" secondAttribute="height" multiplier="1:1" id="0NI-EB-1a2"/>
@@ -84,7 +84,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuC-2l-bfb" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wuC-2l-bfb" secondAttribute="height" multiplier="1:1" id="sPz-FS-Zey"/>
@@ -105,7 +105,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCp-Ks-ycG" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="KCp-Ks-ycG" secondAttribute="height" multiplier="1:1" id="wfZ-xy-L1P"/>
@@ -123,7 +123,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-dN-FNk" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cnr-dN-FNk" secondAttribute="height" multiplier="1:1" id="1S0-lA-xLZ"/>
@@ -141,7 +141,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMO-JQ-65R" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="LMO-JQ-65R" secondAttribute="height" multiplier="1:1" id="S8V-zg-hEr"/>
@@ -159,7 +159,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azD-UU-EKi" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="azD-UU-EKi" secondAttribute="height" multiplier="1:1" id="gCg-8m-bEg"/>
@@ -177,7 +177,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz9-Ed-2vE" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="bz9-Ed-2vE" secondAttribute="height" multiplier="1:1" id="t06-rp-HT7"/>
@@ -195,7 +195,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30v-QG-aGM" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="30v-QG-aGM" secondAttribute="height" multiplier="1:1" id="9Hb-HH-iUJ"/>
@@ -215,10 +215,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M25-HD-fGh">
-                                        <rect key="frame" x="0.0" y="42" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="47" width="367" height="38.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwl-dh-1cG" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="bwl-dh-1cG" secondAttribute="height" multiplier="1:1" id="8Vd-X8-YIS"/>
@@ -236,7 +236,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alj-BZ-TmE" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="alj-BZ-TmE" secondAttribute="height" multiplier="1:1" id="4LG-Ah-fg2"/>
@@ -257,7 +257,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLJ-vM-uSq" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="pLJ-vM-uSq" secondAttribute="height" multiplier="1:1" id="fdy-xX-wr1"/>
@@ -275,7 +275,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-8W-kgz" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ly1-8W-kgz" secondAttribute="height" multiplier="1:1" id="EQT-b3-n2l"/>
@@ -293,7 +293,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-b9-jax" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qZB-b9-jax" secondAttribute="height" multiplier="1:1" id="LRJ-6w-9gn"/>
@@ -311,7 +311,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzt-Og-nLz" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jzt-Og-nLz" secondAttribute="height" multiplier="1:1" id="XgQ-pe-QUg"/>
@@ -329,7 +329,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11v-zj-F5K" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="11v-zj-F5K" secondAttribute="height" multiplier="1:1" id="ePI-qr-x9q"/>
@@ -347,7 +347,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3p-FJ-Jaq" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="s3p-FJ-Jaq" secondAttribute="height" multiplier="1:1" id="g2e-gE-Vvq"/>
@@ -367,10 +367,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K4v-mx-2lb">
-                                        <rect key="frame" x="0.0" y="84" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="93.666666666666671" width="367" height="39.000000000000014"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJD-MP-iSm" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cJD-MP-iSm" secondAttribute="height" multiplier="1:1" id="i4L-UF-Wfm"/>
@@ -388,7 +388,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WL-Dk-ixs" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5WL-Dk-ixs" secondAttribute="height" multiplier="1:1" id="5TV-bW-rQ0"/>
@@ -409,7 +409,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-3Z-qxs" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qAs-3Z-qxs" secondAttribute="height" multiplier="1:1" id="MXQ-3I-5In"/>
@@ -427,7 +427,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syn-Cf-T66" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Syn-Cf-T66" secondAttribute="height" multiplier="1:1" id="Dz5-4B-UYd"/>
@@ -445,7 +445,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3i-ks-AT8" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="v3i-ks-AT8" secondAttribute="height" multiplier="1:1" id="n2p-8Y-gPN"/>
@@ -463,7 +463,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA5-pC-Bmk" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CA5-pC-Bmk" secondAttribute="height" multiplier="1:1" id="TKN-T3-eIe"/>
@@ -481,7 +481,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-PF-mJE" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FOE-PF-mJE" secondAttribute="height" multiplier="1:1" id="eGi-Wf-gWc"/>
@@ -499,7 +499,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yc-Y8-1c4" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1yc-Y8-1c4" secondAttribute="height" multiplier="1:1" id="uyU-Ac-Kx8"/>
@@ -519,10 +519,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2jM-q3-fsh">
-                                        <rect key="frame" x="0.0" y="126" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="140.66666666666666" width="367" height="39"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvJ-rT-iX5" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CvJ-rT-iX5" secondAttribute="height" multiplier="1:1" id="Fpf-6p-6pi"/>
@@ -540,7 +540,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7V-Or-Yam" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="N7V-Or-Yam" secondAttribute="height" multiplier="1:1" id="9NT-Pb-YBx"/>
@@ -561,7 +561,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg6-9Q-xoF" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Tg6-9Q-xoF" secondAttribute="height" multiplier="1:1" id="52O-Vi-S2q"/>
@@ -579,7 +579,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grM-Qf-eFg" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="grM-Qf-eFg" secondAttribute="height" multiplier="1:1" id="v3p-b4-5h6"/>
@@ -597,7 +597,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPD-B8-6nC" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RPD-B8-6nC" secondAttribute="height" multiplier="1:1" id="rhf-ay-RBo"/>
@@ -615,7 +615,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl2-7W-qBS" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zl2-7W-qBS" secondAttribute="height" multiplier="1:1" id="ay3-Ca-9ht"/>
@@ -633,7 +633,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbI-xe-YoD" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PbI-xe-YoD" secondAttribute="height" multiplier="1:1" id="GEx-dL-DPz"/>
@@ -651,7 +651,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-Wd-uFP" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vfW-Wd-uFP" secondAttribute="height" multiplier="1:1" id="ezP-et-OZf"/>
@@ -671,10 +671,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="01G-Aa-NzA">
-                                        <rect key="frame" x="0.0" y="168" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="187.66666666666666" width="367" height="38.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdQ-Gh-9BC" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gdQ-Gh-9BC" secondAttribute="height" multiplier="1:1" id="UtI-kh-sBO"/>
@@ -692,7 +692,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8r-c7-tEW" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="g8r-c7-tEW" secondAttribute="height" multiplier="1:1" id="FzW-fF-vjX"/>
@@ -713,7 +713,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhE-i8-Ifo" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xhE-i8-Ifo" secondAttribute="height" multiplier="1:1" id="GU5-8t-EWZ"/>
@@ -731,7 +731,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-Gc-r8m" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xdy-Gc-r8m" secondAttribute="height" multiplier="1:1" id="luV-kP-VPg"/>
@@ -749,7 +749,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1O-70-0wa" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="C1O-70-0wa" secondAttribute="height" multiplier="1:1" id="eiN-RK-IUc"/>
@@ -767,7 +767,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ha-77-IjZ" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9ha-77-IjZ" secondAttribute="height" multiplier="1:1" id="yxh-M2-ihB"/>
@@ -785,7 +785,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGL-2Y-mJF" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TGL-2Y-mJF" secondAttribute="height" multiplier="1:1" id="lkZ-wE-WNP"/>
@@ -803,7 +803,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR6-EM-pQq" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jR6-EM-pQq" secondAttribute="height" multiplier="1:1" id="I8E-hF-ay5"/>
@@ -823,10 +823,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Jr-0G-oeT">
-                                        <rect key="frame" x="0.0" y="210" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="234.33333333333334" width="367" height="39.000000000000028"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0m-8m-c6G" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="K0m-8m-c6G" secondAttribute="height" multiplier="1:1" id="yP3-Z0-r98"/>
@@ -844,7 +844,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-XI-msS" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9cc-XI-msS" secondAttribute="height" multiplier="1:1" id="Llt-pM-nmy"/>
@@ -865,7 +865,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-cO-k4q" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cTZ-cO-k4q" secondAttribute="height" multiplier="1:1" id="LWA-K1-3yj"/>
@@ -883,7 +883,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uID-if-P57" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uID-if-P57" secondAttribute="height" multiplier="1:1" id="abW-80-b8f"/>
@@ -901,7 +901,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-YY-G3v" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="9cI-YY-G3v" secondAttribute="height" multiplier="1:1" id="dhU-7f-5eL"/>
@@ -919,7 +919,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhV-55-cXO" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="UhV-55-cXO" secondAttribute="height" multiplier="1:1" id="rrc-O8-btt"/>
@@ -937,7 +937,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niu-wj-ZRX" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Niu-wj-ZRX" secondAttribute="height" multiplier="1:1" id="kmi-sy-8ll"/>
@@ -955,7 +955,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujR-LE-CZ3" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ujR-LE-CZ3" secondAttribute="height" multiplier="1:1" id="Nia-QR-zyd"/>
@@ -975,10 +975,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Ji-1O-WJ3">
-                                        <rect key="frame" x="0.0" y="252" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="281.33333333333331" width="367" height="38.666666666666686"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sQ-yN-25d" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8sQ-yN-25d" secondAttribute="height" multiplier="1:1" id="RFl-l7-Bw7"/>
@@ -996,7 +996,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-Da-nwY" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jbE-Da-nwY" secondAttribute="height" multiplier="1:1" id="nTG-YR-96V"/>
@@ -1017,7 +1017,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-Wf-dtr" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wdv-Wf-dtr" secondAttribute="height" multiplier="1:1" id="MYI-4w-b6b"/>
@@ -1035,7 +1035,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-TT-ARW" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ZR0-TT-ARW" secondAttribute="height" multiplier="1:1" id="h2Y-fS-MZ8"/>
@@ -1053,7 +1053,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3o-VL-oDS" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="U3o-VL-oDS" secondAttribute="height" multiplier="1:1" id="TDd-9v-l29"/>
@@ -1071,7 +1071,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aup-DS-grA" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="aup-DS-grA" secondAttribute="height" multiplier="1:1" id="OnB-Ya-W8E"/>
@@ -1089,7 +1089,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBd-gb-v1Z" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="WBd-gb-v1Z" secondAttribute="height" multiplier="1:1" id="5uL-Lu-QKU"/>
@@ -1107,7 +1107,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-vY-V8F" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="38.666666666666664"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="8Ra-vY-V8F" secondAttribute="height" multiplier="1:1" id="ZyP-7L-QwF"/>
@@ -1127,10 +1127,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rz6-M4-7rQ">
-                                        <rect key="frame" x="0.0" y="294" width="328" height="34"/>
+                                        <rect key="frame" x="0.0" y="328" width="367" height="39"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6w-bY-41g" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="o6w-bY-41g" secondAttribute="height" multiplier="1:1" id="trM-J8-jVf"/>
@@ -1148,7 +1148,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR8-kL-TU7" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="42" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gR8-kL-TU7" secondAttribute="height" multiplier="1:1" id="qke-qs-owJ"/>
@@ -1169,7 +1169,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3x-PF-le1" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="84" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="v3x-PF-le1" secondAttribute="height" multiplier="1:1" id="8Y9-mB-Xff"/>
@@ -1187,7 +1187,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcp-kc-CBU" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Hcp-kc-CBU" secondAttribute="height" multiplier="1:1" id="Jwz-L5-eLH"/>
@@ -1205,7 +1205,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-3w-X6k" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="168" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="7b0-3w-X6k" secondAttribute="height" multiplier="1:1" id="eoc-JJ-xLd"/>
@@ -1223,7 +1223,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-Ih-NKs" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uDq-Ih-NKs" secondAttribute="height" multiplier="1:1" id="6Su-Np-d6c"/>
@@ -1241,7 +1241,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frs-F2-QdY" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="252" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="frs-F2-QdY" secondAttribute="height" multiplier="1:1" id="EEo-mT-CfV"/>
@@ -1259,7 +1259,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-90-Vkf" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
-                                                <rect key="frame" x="294" y="0.0" width="34" height="34"/>
+                                                <rect key="frame" x="328" y="0.0" width="39" height="39"/>
                                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="fvb-90-Vkf" secondAttribute="height" multiplier="1:1" id="gBd-5a-Zrh"/>
@@ -1281,17 +1281,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xf-Sk-8aZ">
-                                <rect key="frame" x="229" y="590" width="122" height="53"/>
+                                <rect key="frame" x="229" y="659" width="161" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Reset"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zk-OQ-isy">
-                                <rect key="frame" x="119" y="435" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1309,7 +1302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="116.57608695652175"/>
+            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
         </scene>
     </scenes>
 </document>
