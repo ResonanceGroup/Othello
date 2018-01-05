@@ -1299,6 +1299,72 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="othelloButton" destination="jOt-NN-iys" collectionClass="NSMutableArray" id="iFy-KR-9Yv"/>
+                        <outletCollection property="othelloButton" destination="wuC-2l-bfb" collectionClass="NSMutableArray" id="2q1-FQ-ZK5"/>
+                        <outletCollection property="othelloButton" destination="KCp-Ks-ycG" collectionClass="NSMutableArray" id="iqh-Iu-q27"/>
+                        <outletCollection property="othelloButton" destination="cnr-dN-FNk" collectionClass="NSMutableArray" id="uIF-3r-JVu"/>
+                        <outletCollection property="othelloButton" destination="LMO-JQ-65R" collectionClass="NSMutableArray" id="2qa-4N-Fia"/>
+                        <outletCollection property="othelloButton" destination="azD-UU-EKi" collectionClass="NSMutableArray" id="uKV-p1-zR4"/>
+                        <outletCollection property="othelloButton" destination="bz9-Ed-2vE" collectionClass="NSMutableArray" id="rWo-D6-DN4"/>
+                        <outletCollection property="othelloButton" destination="30v-QG-aGM" collectionClass="NSMutableArray" id="KaT-xl-0bo"/>
+                        <outletCollection property="othelloButton" destination="bwl-dh-1cG" collectionClass="NSMutableArray" id="6WH-I7-uZf"/>
+                        <outletCollection property="othelloButton" destination="alj-BZ-TmE" collectionClass="NSMutableArray" id="zua-1U-dHv"/>
+                        <outletCollection property="othelloButton" destination="pLJ-vM-uSq" collectionClass="NSMutableArray" id="Tbk-kd-XQ0"/>
+                        <outletCollection property="othelloButton" destination="ly1-8W-kgz" collectionClass="NSMutableArray" id="QA6-06-gmI"/>
+                        <outletCollection property="othelloButton" destination="qZB-b9-jax" collectionClass="NSMutableArray" id="B3Z-kg-eJm"/>
+                        <outletCollection property="othelloButton" destination="jzt-Og-nLz" collectionClass="NSMutableArray" id="HKq-91-KVi"/>
+                        <outletCollection property="othelloButton" destination="11v-zj-F5K" collectionClass="NSMutableArray" id="7CU-HU-eIA"/>
+                        <outletCollection property="othelloButton" destination="s3p-FJ-Jaq" collectionClass="NSMutableArray" id="80R-CX-ddh"/>
+                        <outletCollection property="othelloButton" destination="cJD-MP-iSm" collectionClass="NSMutableArray" id="Sqm-aB-bMM"/>
+                        <outletCollection property="othelloButton" destination="5WL-Dk-ixs" collectionClass="NSMutableArray" id="wfU-Me-7Hw"/>
+                        <outletCollection property="othelloButton" destination="qAs-3Z-qxs" collectionClass="NSMutableArray" id="o0c-c4-bCb"/>
+                        <outletCollection property="othelloButton" destination="Syn-Cf-T66" collectionClass="NSMutableArray" id="Akz-Nd-Kep"/>
+                        <outletCollection property="othelloButton" destination="v3i-ks-AT8" collectionClass="NSMutableArray" id="K8f-7V-MhO"/>
+                        <outletCollection property="othelloButton" destination="CA5-pC-Bmk" collectionClass="NSMutableArray" id="geu-md-mfR"/>
+                        <outletCollection property="othelloButton" destination="FOE-PF-mJE" collectionClass="NSMutableArray" id="NIS-ML-Ee5"/>
+                        <outletCollection property="othelloButton" destination="1yc-Y8-1c4" collectionClass="NSMutableArray" id="BT3-rk-TQu"/>
+                        <outletCollection property="othelloButton" destination="CvJ-rT-iX5" collectionClass="NSMutableArray" id="cMo-AV-Xes"/>
+                        <outletCollection property="othelloButton" destination="N7V-Or-Yam" collectionClass="NSMutableArray" id="s9R-K1-PGN"/>
+                        <outletCollection property="othelloButton" destination="Tg6-9Q-xoF" collectionClass="NSMutableArray" id="rPF-6C-NV6"/>
+                        <outletCollection property="othelloButton" destination="grM-Qf-eFg" collectionClass="NSMutableArray" id="uro-qR-YEM"/>
+                        <outletCollection property="othelloButton" destination="RPD-B8-6nC" collectionClass="NSMutableArray" id="HJ5-T2-T6X"/>
+                        <outletCollection property="othelloButton" destination="zl2-7W-qBS" collectionClass="NSMutableArray" id="Vkd-jQ-Vbc"/>
+                        <outletCollection property="othelloButton" destination="PbI-xe-YoD" collectionClass="NSMutableArray" id="uMa-YO-1aC"/>
+                        <outletCollection property="othelloButton" destination="vfW-Wd-uFP" collectionClass="NSMutableArray" id="CC6-YE-OWD"/>
+                        <outletCollection property="othelloButton" destination="gdQ-Gh-9BC" collectionClass="NSMutableArray" id="Uhn-jJ-ABf"/>
+                        <outletCollection property="othelloButton" destination="g8r-c7-tEW" collectionClass="NSMutableArray" id="uBE-4e-DO2"/>
+                        <outletCollection property="othelloButton" destination="xhE-i8-Ifo" collectionClass="NSMutableArray" id="d1b-kx-YVj"/>
+                        <outletCollection property="othelloButton" destination="xdy-Gc-r8m" collectionClass="NSMutableArray" id="Sh4-op-IqB"/>
+                        <outletCollection property="othelloButton" destination="C1O-70-0wa" collectionClass="NSMutableArray" id="cBE-oJ-20s"/>
+                        <outletCollection property="othelloButton" destination="9ha-77-IjZ" collectionClass="NSMutableArray" id="Qwc-hC-rse"/>
+                        <outletCollection property="othelloButton" destination="TGL-2Y-mJF" collectionClass="NSMutableArray" id="587-Sv-6E6"/>
+                        <outletCollection property="othelloButton" destination="jR6-EM-pQq" collectionClass="NSMutableArray" id="EXu-ih-frL"/>
+                        <outletCollection property="othelloButton" destination="K0m-8m-c6G" collectionClass="NSMutableArray" id="wGb-v8-0dm"/>
+                        <outletCollection property="othelloButton" destination="9cc-XI-msS" collectionClass="NSMutableArray" id="r7K-i4-4Ay"/>
+                        <outletCollection property="othelloButton" destination="cTZ-cO-k4q" collectionClass="NSMutableArray" id="qBD-Jw-mZU"/>
+                        <outletCollection property="othelloButton" destination="uID-if-P57" collectionClass="NSMutableArray" id="i44-Ci-ZGm"/>
+                        <outletCollection property="othelloButton" destination="9cI-YY-G3v" collectionClass="NSMutableArray" id="6cI-Uh-73G"/>
+                        <outletCollection property="othelloButton" destination="UhV-55-cXO" collectionClass="NSMutableArray" id="UVp-kx-NEk"/>
+                        <outletCollection property="othelloButton" destination="Niu-wj-ZRX" collectionClass="NSMutableArray" id="uAt-AC-mMa"/>
+                        <outletCollection property="othelloButton" destination="ujR-LE-CZ3" collectionClass="NSMutableArray" id="hgv-Wz-19z"/>
+                        <outletCollection property="othelloButton" destination="8sQ-yN-25d" collectionClass="NSMutableArray" id="gFf-3n-uVM"/>
+                        <outletCollection property="othelloButton" destination="jbE-Da-nwY" collectionClass="NSMutableArray" id="nsm-hw-Equ"/>
+                        <outletCollection property="othelloButton" destination="wdv-Wf-dtr" collectionClass="NSMutableArray" id="7t9-AN-mLN"/>
+                        <outletCollection property="othelloButton" destination="ZR0-TT-ARW" collectionClass="NSMutableArray" id="Tbf-gG-Sld"/>
+                        <outletCollection property="othelloButton" destination="U3o-VL-oDS" collectionClass="NSMutableArray" id="dCs-gm-L3G"/>
+                        <outletCollection property="othelloButton" destination="aup-DS-grA" collectionClass="NSMutableArray" id="zAY-q4-jIj"/>
+                        <outletCollection property="othelloButton" destination="WBd-gb-v1Z" collectionClass="NSMutableArray" id="KDz-6C-QJi"/>
+                        <outletCollection property="othelloButton" destination="8Ra-vY-V8F" collectionClass="NSMutableArray" id="pl5-Dm-CCd"/>
+                        <outletCollection property="othelloButton" destination="o6w-bY-41g" collectionClass="NSMutableArray" id="qcN-2t-NlA"/>
+                        <outletCollection property="othelloButton" destination="gR8-kL-TU7" collectionClass="NSMutableArray" id="GZc-Bn-yFR"/>
+                        <outletCollection property="othelloButton" destination="v3x-PF-le1" collectionClass="NSMutableArray" id="0eo-Pt-l0e"/>
+                        <outletCollection property="othelloButton" destination="Hcp-kc-CBU" collectionClass="NSMutableArray" id="ZHc-UG-hqo"/>
+                        <outletCollection property="othelloButton" destination="7b0-3w-X6k" collectionClass="NSMutableArray" id="Bt6-GJ-yPW"/>
+                        <outletCollection property="othelloButton" destination="uDq-Ih-NKs" collectionClass="NSMutableArray" id="fgX-YE-WXy"/>
+                        <outletCollection property="othelloButton" destination="frs-F2-QdY" collectionClass="NSMutableArray" id="BWj-A9-Ev4"/>
+                        <outletCollection property="othelloButton" destination="fvb-90-Vkf" collectionClass="NSMutableArray" id="lSw-7e-JEM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

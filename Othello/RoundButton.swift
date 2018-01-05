@@ -37,10 +37,11 @@ class RoundButton: UIButton
     }
     
     func setTilePosition(){
+    
+        
         p_tilePosition.x = round(self.layer.position.x / (self.frame.size.width + 8.0))// The 8 here is the standard spacing between sibling views
-        if let yPosition = self.superview?.layer.position.y{
-            p_tilePosition.y = round(yPosition / (self.frame.size.height + 8.0))
-        }
+            p_tilePosition.y = round(self.layer.position.y / (self.frame.size.height + 8.0))
+
     }
     
     var cornerRadius: CGFloat = 0
