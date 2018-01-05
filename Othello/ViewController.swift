@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         {
         let button =  othelloButton[index]
         }
-        //hmmmm
+        //hmmmm123123
         button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
         
     }
