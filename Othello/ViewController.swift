@@ -22,6 +22,19 @@ class ViewController: UIViewController {
     @IBOutlet var othelloButton: [RoundButton]!
   
     
+    @IBAction func touchButton(_ sender: RoundButton) {
+    updateButtonColor()
+    }
 
+    private func updateButtonColor()
+    {
+        for index in othelloButton.indices
+        {
+        let button =  othelloButton[index]
+        }
+        button.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
+        
+    }
 }
+
 

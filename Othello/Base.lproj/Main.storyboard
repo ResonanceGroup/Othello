@@ -82,6 +82,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="34W-88-4ws"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuC-2l-bfb" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
@@ -103,6 +106,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSG-bC-Y3w"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCp-Ks-ycG" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
@@ -121,6 +127,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFd-z9-jiV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-dN-FNk" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
@@ -139,6 +148,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqD-B7-B8b"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMO-JQ-65R" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
@@ -157,6 +169,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPX-E8-Umo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azD-UU-EKi" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
@@ -175,6 +190,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Naf-LJ-Cby"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bz9-Ed-2vE" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
@@ -193,6 +211,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Jf-OZ-g3E"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30v-QG-aGM" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="39"/>
@@ -211,6 +232,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zE-dp-Mh7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -234,6 +258,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tab-Um-eIy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alj-BZ-TmE" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
@@ -255,6 +282,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6b-Xv-cAK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLJ-vM-uSq" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="38.666666666666664"/>
@@ -273,6 +303,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMJ-Sg-M9H"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-8W-kgz" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
@@ -291,6 +324,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EHY-Pb-Haz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-b9-jax" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
@@ -309,6 +345,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LfK-43-gXV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzt-Og-nLz" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="38.666666666666664"/>
@@ -327,6 +366,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPM-tO-mtq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11v-zj-F5K" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="38.666666666666664"/>
@@ -345,6 +387,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNK-Ap-DMf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3p-FJ-Jaq" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="38.666666666666664"/>
@@ -363,6 +408,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HNx-LB-Osy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -386,6 +434,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acM-nw-tAa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WL-Dk-ixs" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
@@ -407,6 +458,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybq-Vv-ERp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-3Z-qxs" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
@@ -425,6 +479,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeL-aj-cj6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syn-Cf-T66" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
@@ -443,6 +500,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQx-2j-pXm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3i-ks-AT8" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
@@ -461,6 +521,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QkV-5n-fGY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA5-pC-Bmk" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
@@ -479,6 +542,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxV-tB-zZt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-PF-mJE" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
@@ -497,6 +563,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38X-kh-dKg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yc-Y8-1c4" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="39"/>
@@ -515,6 +584,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACM-Pk-gec"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -538,6 +610,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vl6-rF-nsZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7V-Or-Yam" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
@@ -559,6 +634,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qzo-ps-GVk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg6-9Q-xoF" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
@@ -577,6 +655,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbP-51-ASX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grM-Qf-eFg" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
@@ -595,6 +676,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bo2-Tm-Z81"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPD-B8-6nC" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
@@ -613,6 +697,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ic9-4h-Tm9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl2-7W-qBS" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
@@ -631,6 +718,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJ9-yh-vgN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbI-xe-YoD" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
@@ -649,6 +739,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9A5-Ja-407"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-Wd-uFP" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="39"/>
@@ -667,6 +760,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWv-IO-goV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -690,6 +786,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H65-Lp-1qN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8r-c7-tEW" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
@@ -711,6 +810,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTF-1q-qCk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhE-i8-Ifo" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="38.666666666666664"/>
@@ -729,6 +831,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eYc-M6-nvS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-Gc-r8m" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
@@ -747,6 +852,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0u-98-VIh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1O-70-0wa" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
@@ -765,6 +873,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyg-5u-R6t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ha-77-IjZ" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="38.666666666666664"/>
@@ -783,6 +894,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32t-L4-UZv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGL-2Y-mJF" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="38.666666666666664"/>
@@ -801,6 +915,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wBG-0L-U0r"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR6-EM-pQq" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="38.666666666666664"/>
@@ -819,6 +936,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YTs-Xy-ngX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -842,6 +962,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efH-QC-rx6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-XI-msS" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
@@ -863,6 +986,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ql-El-ckm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTZ-cO-k4q" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
@@ -881,6 +1007,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMK-lO-T46"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uID-if-P57" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
@@ -899,6 +1028,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WxR-bK-S6t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-YY-G3v" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
@@ -917,6 +1049,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIn-c7-jfW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhV-55-cXO" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
@@ -935,6 +1070,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3S-TI-JoE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Niu-wj-ZRX" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
@@ -953,6 +1091,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2H-wK-LnV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujR-LE-CZ3" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="39"/>
@@ -971,6 +1112,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MVa-ZI-jfk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -994,6 +1138,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDo-je-OXD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-Da-nwY" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
@@ -1015,6 +1162,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZd-Ge-KeY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-Wf-dtr" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="38.666666666666664"/>
@@ -1033,6 +1183,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kss-Hw-yEJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-TT-ARW" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="38.666666666666664"/>
@@ -1051,6 +1204,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nyV-1R-P1N"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3o-VL-oDS" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="38.666666666666664"/>
@@ -1069,6 +1225,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIQ-cT-ckQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aup-DS-grA" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="38.666666666666664"/>
@@ -1087,6 +1246,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8i3-IW-trf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBd-gb-v1Z" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="38.666666666666664"/>
@@ -1105,6 +1267,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3HC-E3-Aeg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-vY-V8F" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="38.666666666666664"/>
@@ -1123,6 +1288,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXL-01-lQ5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1146,6 +1314,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMr-R4-8zW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gR8-kL-TU7" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="47" y="0.0" width="38.666666666666657" height="39"/>
@@ -1167,6 +1338,9 @@
                                                         <real key="value" value="36"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxE-cM-ZbV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3x-PF-le1" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="93.666666666666671" y="0.0" width="39.000000000000014" height="39"/>
@@ -1185,6 +1359,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rd4-C0-ttT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcp-kc-CBU" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="140.66666666666666" y="0.0" width="39" height="39"/>
@@ -1203,6 +1380,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7a-NI-g71"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-3w-X6k" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="187.66666666666666" y="0.0" width="38.666666666666657" height="39"/>
@@ -1221,6 +1401,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmY-DE-Byv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-Ih-NKs" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="234.33333333333331" y="0.0" width="39" height="39"/>
@@ -1239,6 +1422,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXA-Sn-5S2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frs-F2-QdY" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="281.33333333333331" y="0.0" width="38.666666666666686" height="39"/>
@@ -1257,6 +1443,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vel-g4-leO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-90-Vkf" customClass="RoundButton" customModule="Othello" customModuleProvider="target">
                                                 <rect key="frame" x="328" y="0.0" width="39" height="39"/>
@@ -1275,6 +1464,9 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Izx-zQ-FXE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
