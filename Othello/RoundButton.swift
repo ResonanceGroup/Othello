@@ -5,52 +5,51 @@
 //  Created by MacUser on 1/3/18.
 //  Copyright © 2018 MacUser. All rights reserved.
 //
-
 import UIKit
 import Foundation
 
 @IBDesignable
 class RoundButton: UIButton
 {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     
-    private var p_tilePosition: CGPoint
+    /*
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
+    public private(set) var p_tilePosition = CGPoint(x: -1, y: -1)
     
     override init(frame: CGRect)
     {
-        p_tilePosition = CGPoint(x: 0, y: 0)
         super.init(frame: frame)
-        setTilePosition()
     }
     
     required init?(coder: NSCoder) {
-        p_tilePosition = CGPoint(x: 0, y: 0)
         super.init(coder: coder)
-        setTilePosition()
     }
     
     func setTilePosition(){
-    
+        
         
         p_tilePosition.x = round(self.layer.position.x / (self.frame.size.width + 8.0))// The 8 here is the standard spacing between sibling views
         if let yPosition = self.superview?.layer.position.y{
             p_tilePosition.y = round(yPosition / (self.frame.size.height + 8.0))
-
+            
         }
     }
     
-    @IBInspectable var currentState: tileState = .neutral{
+    var currentState: TileState = .neutral{
         didSet{
             switch currentState{
-            case neutral:
-                
+            case .neutral:
+                self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+            case .black:
+                self.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            case .white:
+                self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             }
         }
     }
@@ -64,7 +63,7 @@ class RoundButton: UIButton
     }
     
     @IBInspectable var borderWidth: CGFloat = 0
-    {
+        {
         didSet
         {
             self.layer.borderWidth = borderWidth
@@ -72,7 +71,7 @@ class RoundButton: UIButton
     }
     
     @IBInspectable var borderColor: UIColor = UIColor.green
-    {
+        {
         didSet
         {
             self.layer.borderColor = borderColor.cgColor
@@ -80,7 +79,7 @@ class RoundButton: UIButton
     }
     
     @IBInspectable var diameter: CGFloat = 36
-    {
+        {
         didSet{
             self.frame.size = CGSize(width: diameter, height: diameter)
             
