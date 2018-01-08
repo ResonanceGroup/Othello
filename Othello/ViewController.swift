@@ -40,9 +40,9 @@ class ViewController: UIViewController {
             }
             // Current algorithm for mapping adjacent tiles
             for distanceButton in othelloButton{
-                let distance = button.calculateDistanceTo(button: distanceButton)
-                if(distance >= 1.0 || distance <= 1.5){
-                    button.addNeighbour(neighbour: distanceButton)
+                let distance = firstLoop.calculateDistanceTo(button: distanceButton)
+                if(distance >= 1.0 && distance <= 1.5){
+                    firstLoop.addNeighbour(neighbour: distanceButton)
                 }
             }
         }
