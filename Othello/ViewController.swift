@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         
         whitePiecesText.text = String(p_whiteCount)
         p_blackPiecesText.text = String(p_blackCount)
+        // THis is an addition to the file
     }
 }
 
