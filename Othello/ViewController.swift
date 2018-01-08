@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             default:
                 break
             }
-            
+            // Current algorithm for mapping adjacent tiles
             for distanceButton in othelloButton{
                 let distance = button.calculateDistanceTo(button: distanceButton)
                 if(distance >= 1.0 || distance <= 1.5){
@@ -54,6 +54,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchButton(_ sender: RoundButton) {
+       // Need to add legal move checker before switch
         if(sender.currentState == .neutral){
             switch p_player{
             case .blackPlayer:
@@ -90,6 +91,7 @@ class ViewController: UIViewController {
         p_blackPiecesText.text = String(p_blackCount)
         // THis is an addition to the file
     }
+   
 }
 
 

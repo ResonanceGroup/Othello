@@ -47,6 +47,8 @@ class RoundButton: UIButton
         didSet{
             switch currentState{
             case .neutral:
+                UIView.transition(with:  duration: 0.6, options: [.transitionFlipFromLeft],
+                    animations: {self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)}     )
                 self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
             case .black:
                 self.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
