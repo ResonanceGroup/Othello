@@ -22,6 +22,8 @@ class RoundButton: UIButton
     
     public private(set) var p_tilePosition = CGPoint(x: -1, y: -1)
     
+    public private(set) var neighbours:[RoundButton] = []
+    
     override init(frame: CGRect)
     {
         super.init(frame: frame)
@@ -52,6 +54,36 @@ class RoundButton: UIButton
                 self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             }
         }
+    }
+    
+    func addNeighbour (neighbour: RoundButton)
+    {
+        neighbours.append(neighbour)
+    }
+    
+    func calculateDistanceTo(button: RoundButton)->Double
+    {
+        return sqrt(Double(pow(self.p_tilePosition.x - button.p_tilePosition.x, 2.0) + pow(self.p_tilePosition.y - button.p_tilePosition.y, 2.0)))
+    }
+    
+    func getNeighbour(previousTilePosition: CGPoint, slope: Double)->RoundButton?
+    {
+        var foundPoint = previousTilePosition
+        
+        if(slope == Double.infinity)
+        {
+            foundPoint.y += 1.0
+        }
+        else if(slope == -Double.infinity)
+        {
+            foundPoint.y -= 1.0
+        }
+        else
+        {
+            
+        }
+        
+        return nil
     }
     
     var cornerRadius: CGFloat = 0
