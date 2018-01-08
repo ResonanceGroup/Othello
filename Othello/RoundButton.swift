@@ -34,8 +34,6 @@ class RoundButton: UIButton
     }
     
     func setTilePosition(){
-        
-        
         p_tilePosition.x = round(self.layer.position.x / (self.frame.size.width + 8.0))// The 8 here is the standard spacing between sibling views
         if let yPosition = self.superview?.layer.position.y{
             p_tilePosition.y = round(yPosition / (self.frame.size.height + 8.0))
@@ -56,7 +54,7 @@ class RoundButton: UIButton
         }
     }
     
-    func addNeighbour (neighbour: RoundButton)
+    func addNeighbour(neighbour: RoundButton)
     {
         neighbours.append(neighbour)
     }
@@ -66,24 +64,18 @@ class RoundButton: UIButton
         return sqrt(Double(pow(self.p_tilePosition.x - button.p_tilePosition.x, 2.0) + pow(self.p_tilePosition.y - button.p_tilePosition.y, 2.0)))
     }
     
-    func getNeighbour(previousTilePosition: CGPoint, slope: Double)->RoundButton?
+    func getNeighbour(slope: Double)->Array<RoundButton>
     {
-        var foundPoint = previousTilePosition
+        var foundNeighbours: [RoundButton] = []
         
-        if(slope == Double.infinity)
-        {
-            foundPoint.y += 1.0
-        }
-        else if(slope == -Double.infinity)
-        {
-            foundPoint.y -= 1.0
-        }
-        else
-        {
-            
+        for neighbourButton in neighbours{
+            let m = (self.p_tilePosition.y - neighbourButton.p_tilePosition.y) / (self.p_tilePosition.x - neighbourButton.p_tilePosition.x)
+            if(slope == Double(m)){
+                foundNeighbours.append(neighbourButton)
+            }
         }
         
-        return nil
+        return foundNeighbours
     }
     
     var cornerRadius: CGFloat = 0
