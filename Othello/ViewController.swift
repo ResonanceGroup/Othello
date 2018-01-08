@@ -38,11 +38,13 @@ class ViewController: UIViewController {
             default:
                 break
             }
-            
+        }
+        
+        for firstLoop in othelloButton{
             for distanceButton in othelloButton{
-                let distance = button.calculateDistanceTo(button: distanceButton)
+                let distance = firstLoop.calculateDistanceTo(button: distanceButton)
                 if(distance >= 1.0 && distance <= 1.5){
-                    button.addNeighbour(neighbour: distanceButton)
+                    firstLoop.addNeighbour(neighbour: distanceButton)
                 }
             }
         }
