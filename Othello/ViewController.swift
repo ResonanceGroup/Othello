@@ -56,6 +56,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchButton(_ sender: RoundButton) {
+        
         if(sender.currentState == .neutral){
             switch p_player{
             case .blackPlayer:
