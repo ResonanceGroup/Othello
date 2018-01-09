@@ -10,7 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private var p_player: Player = .blackPlayer
+    private var p_player: Player = .blackPlayer{
+        didSet{
+            // Check if there are at least 1 legal move
+            // If False, chech previose state and if also false, end game
+            // If False, check previouse state and if true, set previouse state as false and skip the player's turn
+            // If true, reset previouse state to true and continue with the players turn
+        }
+    }
     
     private var p_whiteCount: Int8 = 2
     
@@ -99,6 +106,7 @@ class ViewController: UIViewController {
         p_blackPiecesText.text = String(p_blackCount)
         // THis is an addition to the file
     }
+    
     func isGameover(){
         //Declare variables in class
         currentValue = legalMoves
