@@ -66,18 +66,78 @@ class RoundButton: UIButton
         return sqrt(Double(pow(self.p_tilePosition.x - button.p_tilePosition.x, 2.0) + pow(self.p_tilePosition.y - button.p_tilePosition.y, 2.0)))
     }
     
-    func getNeighbour(slope: Double)->Array<RoundButton>
+    func getNeighbour(direction: direction)->RoundButton?
     {
-        var foundNeighbours: [RoundButton] = []
+        var foundNeighbour: RoundButton? = nil
         
-        for neighbourButton in neighbours{
-            let m = (self.p_tilePosition.y - neighbourButton.p_tilePosition.y) / (self.p_tilePosition.x - neighbourButton.p_tilePosition.x)
-            if(slope == Double(m)){
-                foundNeighbours.append(neighbourButton)
+        switch direction{
+        case .North:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .South:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .East:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .West:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .NorthEast:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .NorthWest:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .SouthEast:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
+                {
+                    foundNeighbour = button
+                    break
+                }
+            }
+        case .SouthWest:
+            for button in neighbours{
+                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
+                {
+                    foundNeighbour = button
+                    break
+                }
             }
         }
-        
-        return foundNeighbours
+    
+        return foundNeighbour
     }
     
     var cornerRadius: CGFloat = 0
