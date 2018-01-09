@@ -19,14 +19,14 @@ class ViewController: UIViewController {
             {
                 p_previousValue = true
             }
-            //checks if end condition is met
-            if (p_legalMoves == false && p_previousValue == false)
+            //checks if end condition is met and ends game
+            else if (p_legalMoves == false && p_previousValue == false)
             {
             ViewController.endGame()
             
             }
             //checks if player should be skipped and skips them
-            if (p_legalMoves == false && p_previousValue == true)
+            else
             {
                 p_previousValue = false
                 if (p_player == .whitePlayer)
@@ -39,11 +39,7 @@ class ViewController: UIViewController {
                 }
                 
             }
-            else
-            {
-                p_previousValue = false
-                
-            }
+       
             // Check if there are at least 1 legal move
             // If False, chech previose state and if also false, end game
             // If False, check previouse state and if true, set previouse state as false and skip the player's turn
@@ -136,7 +132,9 @@ class ViewController: UIViewController {
         p_blackPiecesText.text = String(p_blackCount)
         // THis is an addition to the file
     }
-    
+    func legalMoves() -> Bool{
+        
+    }
  
         func endGame(){
             
