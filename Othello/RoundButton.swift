@@ -43,17 +43,15 @@ class RoundButton: UIButton
     
     var currentState: TileState = .neutral{
         didSet{
+           
             switch currentState{
             case .neutral:
-                UIView(with: self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1) ,
-                       duration: 0.6,
-                       options: [self.transitionFlipFromLeft],
-                       animations: {self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)}     )
-                self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+               
+                UIView.transition(with: self, duration: 0.6, options: [.curveEaseIn], animations: {self.backgroundColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)} )
             case .black:
-                self.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                UIView.transition(with: self, duration: 0.6, options: [.transitionFlipFromLeft], animations: {self.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)} )
             case .white:
-                self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                UIView.transition(with: self, duration: 0.6, options: [.transitionFlipFromRight], animations: {self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)} )
             }
         }
     }
