@@ -22,6 +22,8 @@ class RoundButton: UIButton
     
     public private(set) var p_tilePosition = CGPoint(x: -1, y: -1)
     
+    public private(set) var p_position = CGPoint(x: -1, y: -1)
+    
     public private(set) var neighbours:[RoundButton] = []
     
     override init(frame: CGRect)
@@ -34,10 +36,12 @@ class RoundButton: UIButton
     }
     
     func setTilePosition(){
-        p_tilePosition.x = round(self.layer.position.x / (self.frame.size.width + 8.0))// The 8 here is the standard spacing between sibling views
-        if let yPosition = self.superview?.layer.position.y{
+        p_tilePosition.x = round(self.frame.origin.x / (self.frame.size.width + 8.0))// The 8 here is the standard spacing between sibling views
+      //  self.frame.origin.x
+        p_position.x = self.frame.origin.x
+        if let yPosition = self.superview?.frame.origin.y{
             p_tilePosition.y = round(yPosition / (self.frame.size.height + 8.0))
-            
+            p_position.y = yPosition
         }
     }
     
@@ -73,7 +77,7 @@ class RoundButton: UIButton
         switch direction{
         case .North:
             for button in neighbours{
-                if((button.p_tilePosition.x == self.p_tilePosition.x) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
+                if((button.p_tilePosition.x == self.p_tilePosition.x) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
                 {
                     foundNeighbour = button
                     break
@@ -81,7 +85,7 @@ class RoundButton: UIButton
             }
         case .South:
             for button in neighbours{
-                if((button.p_tilePosition.x == self.p_tilePosition.x) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
+                if((button.p_tilePosition.x == self.p_tilePosition.x) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
                 {
                     foundNeighbour = button
                     break
@@ -105,7 +109,7 @@ class RoundButton: UIButton
             }
         case .NorthEast:
             for button in neighbours{
-                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
+                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
                 {
                     foundNeighbour = button
                     break
@@ -113,7 +117,7 @@ class RoundButton: UIButton
             }
         case .NorthWest:
             for button in neighbours{
-                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
+                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
                 {
                     foundNeighbour = button
                     break
@@ -121,7 +125,7 @@ class RoundButton: UIButton
             }
         case .SouthEast:
             for button in neighbours{
-                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
+                if((button.p_tilePosition.x == self.p_tilePosition.x + 1) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
                 {
                     foundNeighbour = button
                     break
@@ -129,7 +133,7 @@ class RoundButton: UIButton
             }
         case .SouthWest:
             for button in neighbours{
-                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y - 1))
+                if((button.p_tilePosition.x == self.p_tilePosition.x - 1) && (button.p_tilePosition.y == self.p_tilePosition.y + 1))
                 {
                     foundNeighbour = button
                     break

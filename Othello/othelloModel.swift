@@ -14,9 +14,25 @@ class othelloModel{
     {
         var returnChain: [RoundButton] = [startbutton]
         
-        if let addedButton = startbutton.getNeighbour(direction: chainDirection)
+        if var addedButton = startbutton.getNeighbour(direction: chainDirection)
         {
+            while addedButton.currentState != .neutral && addedButton.currentState != returnChain[0].currentState
+            {
+                returnChain.append(addedButton)
+                
+                let temp = addedButton.getNeighbour(direction: chainDirection)
+                
+                if temp == nil{
+                    break
+                }
+                else{
+                    addedButton = temp!
+                }
+            }
             
+            if addedButton.currentState == startbutton.currentState{
+                returnChain.append(addedButton)
+            }
         }
         
         return returnChain

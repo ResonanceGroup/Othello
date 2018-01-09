@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private var p_player: Player = .blackPlayer{
-        didSet{
-            // Check if there are at least 1 legal move
-            // If False, chech previose state and if also false, end game
-            // If False, check previouse state and if true, set previouse state as false and skip the player's turn
-            // If true, reset previouse state to true and continue with the players turn
-        }
-    }
+    private var p_player: Player = .blackPlayer
+//        didSet{
+//            // Check if there are at least 1 legal move
+//            // If False, chech previose state and if also false, end game
+//            // If False, check previouse state and if true, set previouse state as false and skip the player's turn
+//            // If true, reset previouse state to true and continue with the players turn
+//        }
+    
     
     private var p_whiteCount: Int8 = 2
     
@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     private var legalMoves = true
     private var previousValue = true
     private var currentValue = true
+    
+    private var p_gameModel: othelloModel = othelloModel()
     
     @IBOutlet weak var whitePiecesText: UILabel!
     
@@ -39,28 +41,34 @@ class ViewController: UIViewController {
         
         for button in othelloButton{
             button.setTilePosition()
-
+button.setTilePosition()
             switch button.p_tilePosition{
-            case CGPoint(x: 4, y: 4), CGPoint(x: 5, y: 5):
+            case CGPoint(x: 3, y: 3), CGPoint(x: 4, y: 4):
                 button.currentState = .white
-            case CGPoint(x: 5, y: 4), CGPoint(x: 4, y: 5):
+            case CGPoint(x: 4, y: 3), CGPoint(x: 3, y: 4):
                 button.currentState = .black
             default:
+                button.currentState = .neutral
                 break
             }
-      //       Current algorithm for mapping adjacent tiles
-            for firstLoop in othelloButton
+        }
+        
+        for firstLoop in othelloButton
+        {
+            for distanceButton in othelloButton
             {
-                for distanceButton in othelloButton
+                let distance = firstLoop.calculateDistanceTo(button: distanceButton)
+                if(distance >= 1.0 && distance <= 1.5)
                 {
-                    let distance = firstLoop.calculateDistanceTo(button: distanceButton)
-                    if(distance >= 1.0 && distance <= 1.5)
-                    {
-                        firstLoop.addNeighbour(neighbour: distanceButton)
-                    }
+                    firstLoop.addNeighbour(neighbour: distanceButton)
                 }
             }
         }
+        for button in othelloButton
+        {
+            var temp = button.currentState
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,12 +82,54 @@ class ViewController: UIViewController {
             switch p_player{
             case .blackPlayer:
                 sender.currentState = .black
-                p_blackCount += 1
+                
+                var incrementValue: Int8 = 1
+                var decrementValue: Int8 = 0
+                
+                for tileDirection in direction.cases{
+                    let chain = p_gameModel.getTileChain(startbutton: sender, chainDirection: tileDirection)
+                    
+                    if(chain.count >= 3){
+                        if(chain[0].currentState == chain[chain.endIndex - 1].currentState)
+                        {
+                            incrementValue = incrementValue + Int8(chain.count - 2)
+                            for button in chain{
+                                if button.currentState != .black{
+                                    button.currentState = .black
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                p_blackCount = p_blackCount + incrementValue
+                p_whiteCount = p_whiteCount - (incrementValue - 1)
                 p_blackPiecesText.text = String(p_blackCount)
+                whitePiecesText.text = String(p_whiteCount)
                 p_player = .whitePlayer
             case .whitePlayer:
                 sender.currentState = .white
-                p_whiteCount += 1
+                
+                var incrementValue: Int8 = 1
+                
+                for tileDirection in direction.cases{
+                    let chain = p_gameModel.getTileChain(startbutton: sender, chainDirection: tileDirection)
+                    
+                    if(chain.count >= 3){
+                        if(chain[0].currentState == chain[chain.endIndex - 1].currentState)
+                        {
+                            incrementValue = incrementValue + Int8(chain.count - 2)
+                            for button in chain{
+                                if button.currentState != .white{
+                                    button.currentState = .white
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                p_whiteCount = p_whiteCount + incrementValue
+                p_blackCount = p_blackCount - (incrementValue - 1)
                 whitePiecesText.text = String(p_whiteCount)
                 p_player = .blackPlayer
             }
@@ -89,10 +139,14 @@ class ViewController: UIViewController {
     @IBAction func touchReset(_ sender: UIButton) {
         for button in othelloButton{
             switch button.p_tilePosition{
-            case CGPoint(x: 4, y: 4), CGPoint(x: 5, y: 5):
-                button.currentState = .white
-            case CGPoint(x: 5, y: 4), CGPoint(x: 4, y: 5):
-                button.currentState = .black
+            case CGPoint(x: 3, y: 3), CGPoint(x: 4, y: 4):
+                if button.currentState != .white{
+                    button.currentState = .white
+                }
+            case CGPoint(x: 4, y: 3), CGPoint(x: 3, y: 4):
+                if button.currentState != .black{
+                    button.currentState = .black
+                }
             default:
                 button.currentState = .neutral
             }
@@ -108,19 +162,19 @@ class ViewController: UIViewController {
     }
     
     func isGameover(){
-        //Declare variables in class
-        currentValue = legalMoves
-        
-        if (currentValue == false && previousValue == false){
-            endGame()
-        }
-        else{
-           previousValue = currentValue
-            return
-        }
-        func endGame(){
-            
-        }
+//        //Declare variables in class
+//        currentValue = legalMoves
+//
+//        if (currentValue == false && previousValue == false){
+//         //   endGame()
+//        }
+//        else{
+//           previousValue = currentValue
+//            return
+//        }
+//        func endGame(){
+//
+//        }
     }
 }
 
