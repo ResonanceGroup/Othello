@@ -27,27 +27,25 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         
-        for button in othelloButton{
-            button.setTilePosition()
-            
-            switch button.p_tilePosition{
-            case CGPoint(x: 4, y: 4), CGPoint(x: 5, y: 5):
-                button.currentState = .white
-            case CGPoint(x: 5, y: 4), CGPoint(x: 4, y: 5):
-                button.currentState = .black
-            default:
-                break
-            }
-        }
-        
-        for firstLoop in othelloButton{
-            for distanceButton in othelloButton{
-                let distance = firstLoop.calculateDistanceTo(button: distanceButton)
-                if(distance >= 1.0 && distance <= 1.5){
-                    firstLoop.addNeighbour(neighbour: distanceButton)
-                }
-            }
-        }
+//        for button in othelloButton{
+//            button.setTilePosition()
+//
+//            switch button.p_tilePosition{
+//            case CGPoint(x: 4, y: 4), CGPoint(x: 5, y: 5):
+//                button.currentState = .white
+//            case CGPoint(x: 5, y: 4), CGPoint(x: 4, y: 5):
+//                button.currentState = .black
+//            default:
+//                break
+//            }
+            // Current algorithm for mapping adjacent tiles
+//            for distanceButton in othelloButton{
+//                let distance = firstLoop.calculateDistanceTo(button: distanceButton)
+//                if(distance >= 1.0 && distance <= 1.5){
+//                    firstLoop.addNeighbour(neighbour: distanceButton)
+//                }
+//            }
+//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -93,6 +91,7 @@ class ViewController: UIViewController {
         p_blackPiecesText.text = String(p_blackCount)
         // THis is an addition to the file
     }
+   
 }
 
 
