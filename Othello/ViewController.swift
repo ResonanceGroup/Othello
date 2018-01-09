@@ -9,9 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private var p_legalMoves = true
+    private var p_previousValue = true
     
     private var p_player: Player = .blackPlayer{
         didSet{
+            //checks for if legal moves is true and sets it p_previous to true
+            if (p_legalMoves == true)
+            {
+                p_previousValue = true
+            }
+            //checks if end condition is met
+            if (p_legalMoves == false && p_previousValue == false)
+            {
+            ViewController.endGame()
+            
+            }
+            //checks if player should be skipped and skips them
+            if (p_legalMoves == false && p_previousValue == true)
+            {
+                p_previousValue = false
+                if (p_player == .whitePlayer)
+                {
+                    p_player = .blackPlayer
+                }
+                else
+                {
+                    p_player = .whitePlayer
+                }
+                
+            }
+            else
+            {
+                p_previousValue = false
+                
+            }
             // Check if there are at least 1 legal move
             // If False, chech previose state and if also false, end game
             // If False, check previouse state and if true, set previouse state as false and skip the player's turn
@@ -22,10 +54,8 @@ class ViewController: UIViewController {
     private var p_whiteCount: Int8 = 2
     
     private var p_blackCount: Int8 = 2
-    private var legalMoves = true
-    private var previousValue = true
-    private var currentValue = true
-    
+
+ 
     @IBOutlet weak var whitePiecesText: UILabel!
     
     @IBOutlet weak var p_blackPiecesText: UILabel!
@@ -107,21 +137,11 @@ class ViewController: UIViewController {
         // THis is an addition to the file
     }
     
-    func isGameover(){
-        //Declare variables in class
-        currentValue = legalMoves
-        
-        if (currentValue == false && previousValue == false){
-            endGame()
-        }
-        else{
-           previousValue = currentValue
-            return
-        }
+ 
         func endGame(){
             
         }
     }
-}
+
 
 
