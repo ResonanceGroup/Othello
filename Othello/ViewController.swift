@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private var p_legalMoves = true
+    private var p_previousValue = true
     
     private var p_player: Player = .blackPlayer
 //        didSet{
@@ -176,6 +178,6 @@ button.setTilePosition()
 //
 //        }
     }
-}
+
 
 
