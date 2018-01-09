@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     private var p_whiteCount: Int8 = 2
     
     private var p_blackCount: Int8 = 2
+    private var legalMoves = true
+    private var previousValue = true
+    private var currentValue = true
     
     @IBOutlet weak var whitePiecesText: UILabel!
     
@@ -87,7 +90,7 @@ class ViewController: UIViewController {
                 button.currentState = .neutral
             }
         }
-        
+    
         p_player = .blackPlayer
         p_whiteCount = 2
         p_blackCount = 2
@@ -96,7 +99,21 @@ class ViewController: UIViewController {
         p_blackPiecesText.text = String(p_blackCount)
         // THis is an addition to the file
     }
-   
+    func isGameover(){
+        //Declare variables in class
+        currentValue = legalMoves
+        
+        if (currentValue == false && previousValue == false){
+            endGame()
+        }
+        else{
+           previousValue = currentValue
+            return
+        }
+        func endGame(){
+            
+        }
+    }
 }
 
 
