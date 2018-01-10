@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     private var p_player: Player = .blackPlayer{
         didSet{
+            updatePlayersTurnTextLabel()
             if (p_legalMoves == true)
             {
                     p_previousValue = true
@@ -71,7 +72,7 @@ class ViewController: UIViewController {
             ]
             let attributedStringWhiteText = NSAttributedString(string: "White Players Turn", attributes: attributesWhiteText)
             playersTurnText.attributedText = attributedStringWhiteText
-                 playersTurnCircleLabel.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
+            playersTurnCircleLabel.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
         
         }
     }
@@ -126,22 +127,18 @@ class ViewController: UIViewController {
     @IBAction func touchButton(_ sender: RoundButton) {
         
         if(sender.currentState == .neutral){
-          
-          
+            var incrementValue: Int8 = 1
+            var isLegalMove = false
             switch p_player{
-        
             case .blackPlayer:
                 sender.currentState = .black
-                
-                var incrementValue: Int8 = 1
-                var decrementValue: Int8 = 0
-                
                 for tileDirection in direction.cases{
                     let chain = p_gameModel.getTileChain(startbutton: sender, chainDirection: tileDirection)
-                    
                     if(chain.count >= 3){
                         if(chain[0].currentState == chain[chain.endIndex - 1].currentState)
                         {
+                            // Legal move has been found, increment/decrement the apporiate values, then proceed to next play
+                            isLegalMove = true
                             incrementValue = incrementValue + Int8(chain.count - 2)
                             for button in chain{
                                 if button.currentState != .black{
@@ -152,23 +149,29 @@ class ViewController: UIViewController {
                     }
                 }
                 
-                p_blackCount = p_blackCount + incrementValue
-                p_whiteCount = p_whiteCount - (incrementValue - 1)
-                p_blackPiecesText.text = String(p_blackCount)
-                whitePiecesText.text = String(p_whiteCount)
-                p_player = .whitePlayer
-                updatePlayersTurnTextLabel()
+                if(isLegalMove)
+                {
+                    p_blackCount = p_blackCount + incrementValue
+                    p_whiteCount = p_whiteCount - (incrementValue - 1)
+                    p_blackPiecesText.text = String(p_blackCount)
+                    whitePiecesText.text = String(p_whiteCount)
+                    p_player = .whitePlayer
+                }
+                else
+                {
+                    sender.currentState = .neutral
+                }
+                
             case .whitePlayer:
                 sender.currentState = .white
-                
-                var incrementValue: Int8 = 1
-                
+
                 for tileDirection in direction.cases{
                     let chain = p_gameModel.getTileChain(startbutton: sender, chainDirection: tileDirection)
                     
                     if(chain.count >= 3){
                         if(chain[0].currentState == chain[chain.endIndex - 1].currentState)
                         {
+                            isLegalMove = true
                             incrementValue = incrementValue + Int8(chain.count - 2)
                             for button in chain{
                                 if button.currentState != .white{
@@ -179,12 +182,18 @@ class ViewController: UIViewController {
                     }
                 }
                 
-                p_whiteCount = p_whiteCount + incrementValue
-                p_blackCount = p_blackCount - (incrementValue - 1)
-                 p_blackPiecesText.text = String(p_blackCount)
-                whitePiecesText.text = String(p_whiteCount)
-                p_player = .blackPlayer
-                updatePlayersTurnTextLabel()
+                if(isLegalMove)
+                {
+                    p_whiteCount = p_whiteCount + incrementValue
+                    p_blackCount = p_blackCount - (incrementValue - 1)
+                    p_blackPiecesText.text = String(p_blackCount)
+                    whitePiecesText.text = String(p_whiteCount)
+                    p_player = .blackPlayer
+                }
+                else
+                {
+                    sender.currentState = .neutral
+                }
             }
         }
     }
