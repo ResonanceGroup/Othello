@@ -15,30 +15,7 @@ class ViewController: UIViewController {
     private var p_player: Player = .blackPlayer{
         didSet{
             updatePlayersTurnTextLabel()
-            if (p_legalMoves == true)
-            {
-                    p_previousValue = true
-            }
-            else if (p_legalMoves == false && p_previousValue == false)
-            {
-            //end game
-            }
-            else{
-                if (p_player == .whitePlayer)
-                {
-                    p_previousValue = false
-                    p_player =  .blackPlayer
-                }
-                else
-                {
-                    p_previousValue = false
-                    p_player = .whitePlayer
-                }
-            }
-//            // Check if there are at least 1 legal move
-//            // If False, chech previose state and if also false, end game
-//            // If False, check previouse state and if true, set previouse state as false and skip the player's turn
-//            // If true, reset previouse state to true and continue with the players turn
+            checkValidMoves()
         }
     }
     
@@ -124,6 +101,78 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func checkValidMoves()
+    {
+        var legalMovePresent = false
+        
+        for buttons in othelloButton
+        {
+            if buttons.currentState == .neutral
+            {
+                for tileDirection in direction.cases
+                {
+                    legalMovePresent = p_gameModel.legalMovePresent(startButton: buttons, chainDirection: tileDirection, currentPlayer: p_player)
+                    
+                    if(legalMovePresent)
+                    {
+                        break
+                    }
+                }
+            }
+            
+            if(legalMovePresent)
+            {
+                break
+            }
+        }
+        
+        if (legalMovePresent)
+        {
+            p_previousValue = true
+        }
+        else if (!legalMovePresent && !p_previousValue)
+        {
+            //end game
+            var winnerString: String
+            
+            if p_blackCount > p_whiteCount{
+                winnerString = "Black Player"
+            }
+            else{
+                winnerString = "White Player"
+            }
+            
+            messageBox(messageTitle: "Winner", messageAlert: "\(winnerString) wins", messageBoxStyle: .alert, alertActionStyle: .`default`)
+        }
+        else{
+            if (p_player == .whitePlayer)
+            {
+                messageBox(messageTitle: "Skip Turn", messageAlert: "Skipping White player's turn", messageBoxStyle: .alert, alertActionStyle: .`default`)
+                
+                p_previousValue = false
+                p_player =  .blackPlayer
+            }
+            else
+            {
+                messageBox(messageTitle: "Skip Turn", messageAlert: "Skipping Black player's turn", messageBoxStyle: .alert, alertActionStyle: .`default`)
+                
+                p_previousValue = false
+                p_player = .whitePlayer
+            }
+        }
+    }
+    
+    func messageBox(messageTitle: String, messageAlert: String, messageBoxStyle: UIAlertControllerStyle, alertActionStyle: UIAlertActionStyle)
+    {
+        let alert = UIAlertController(title: messageTitle, message: messageAlert, preferredStyle: messageBoxStyle)
+        
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: alertActionStyle, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func touchButton(_ sender: RoundButton) {
         
         if(sender.currentState == .neutral){
@@ -160,6 +209,7 @@ class ViewController: UIViewController {
                 else
                 {
                     sender.currentState = .neutral
+                    checkValidMoves()
                 }
                 
             case .whitePlayer:
@@ -193,6 +243,7 @@ class ViewController: UIViewController {
                 else
                 {
                     sender.currentState = .neutral
+                    checkValidMoves()
                 }
             }
         }

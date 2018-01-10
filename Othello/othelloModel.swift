@@ -35,4 +35,41 @@ class othelloModel{
         return returnChain
     }
     
+    func legalMovePresent(startButton: RoundButton, chainDirection: direction, currentPlayer: Player)->Bool
+    {
+        var chain: [RoundButton] = [startButton]
+        
+        var theoryTileState: TileState
+        
+        switch currentPlayer{
+        case .blackPlayer:
+            theoryTileState = .black
+        case .whitePlayer:
+            theoryTileState = .white
+        }
+        
+        if var addedButton = startButton.getNeighbour(direction: chainDirection)
+        {
+            while addedButton.currentState != .neutral && addedButton.currentState != theoryTileState
+            {
+                chain.append(addedButton)
+                
+                if let temp = addedButton.getNeighbour(direction: chainDirection){
+                    addedButton = temp
+                } else {
+                    break
+                }
+            }
+            
+            if addedButton.currentState == theoryTileState{
+                chain.append(addedButton)
+            }
+        }
+        
+        if chain.count >= 3 && (chain[chain.endIndex - 1].currentState ==  theoryTileState){
+            return true
+        } else {
+            return false
+        }
+    }
 }
