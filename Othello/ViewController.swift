@@ -147,6 +147,7 @@ class ViewController: UIViewController {
                 
                 p_whiteCount = p_whiteCount + incrementValue
                 p_blackCount = p_blackCount - (incrementValue - 1)
+                 p_blackPiecesText.text = String(p_blackCount)
                 whitePiecesText.text = String(p_whiteCount)
                 p_player = .blackPlayer
             }
