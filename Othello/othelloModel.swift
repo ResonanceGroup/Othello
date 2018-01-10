@@ -16,17 +16,14 @@ class othelloModel{
         
         if var addedButton = startbutton.getNeighbour(direction: chainDirection)
         {
-            while addedButton.currentState != .neutral && addedButton.currentState != returnChain[0].currentState
+            while addedButton.currentState != .neutral && addedButton.currentState != startbutton.currentState
             {
                 returnChain.append(addedButton)
                 
-                let temp = addedButton.getNeighbour(direction: chainDirection)
-                
-                if temp == nil{
+                if let temp = addedButton.getNeighbour(direction: chainDirection){
+                    addedButton = temp
+                } else {
                     break
-                }
-                else{
-                    addedButton = temp!
                 }
             }
             
