@@ -66,11 +66,6 @@ button.setTilePosition()
                 }
             }
         }
-        for button in othelloButton
-        {
-            var temp = button.currentState
-        }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -176,7 +171,7 @@ button.setTilePosition()
 //        }
 //        func endGame(){
 //
-//        }
+        }
     }
 
 
