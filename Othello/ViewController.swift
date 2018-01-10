@@ -12,14 +12,34 @@ class ViewController: UIViewController {
     private var p_legalMoves = true
     private var p_previousValue = true
     
-    private var p_player: Player = .blackPlayer
-//        didSet{
+    private var p_player: Player = .blackPlayer{
+        didSet{
+            if (p_legalMoves == true)
+            {
+                    p_previousValue = true
+            }
+            else if (p_legalMoves == false && p_previousValue == false)
+            {
+            //end game
+            }
+            else{
+                if (p_player == .whitePlayer)
+                {
+                    p_previousValue = false
+                    p_player =  .blackPlayer
+                }
+                else
+                {
+                    p_previousValue = false
+                    p_player = .whitePlayer
+                }
+            }
 //            // Check if there are at least 1 legal move
 //            // If False, chech previose state and if also false, end game
 //            // If False, check previouse state and if true, set previouse state as false and skip the player's turn
 //            // If true, reset previouse state to true and continue with the players turn
-//        }
-    
+        }
+    }
     
     private var p_whiteCount: Int8 = 2
     
@@ -43,7 +63,7 @@ class ViewController: UIViewController {
         
         for button in othelloButton{
             button.setTilePosition()
-button.setTilePosition()
+            button.setTilePosition()
             switch button.p_tilePosition{
             case CGPoint(x: 3, y: 3), CGPoint(x: 4, y: 4):
                 button.currentState = .white
