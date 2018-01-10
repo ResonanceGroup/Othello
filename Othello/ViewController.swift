@@ -94,6 +94,9 @@ class ViewController: UIViewController {
                 }
             }
         }
+        
+        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -164,17 +167,33 @@ class ViewController: UIViewController {
     
     func messageBox(messageTitle: String, messageAlert: String, messageBoxStyle: UIAlertControllerStyle, alertActionStyle: UIAlertActionStyle)
     {
+        var okClicked = false
         let alert = UIAlertController(title: messageTitle, message: messageAlert, preferredStyle: messageBoxStyle)
         
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: alertActionStyle, handler: { _ in
+        let okAction = UIAlertAction(title: "Ok", style: alertActionStyle)
+        {
+            (alert: UIAlertAction!) -> Void in
+            okClicked = true
+        }
+        
+
+    /*    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: alertActionStyle, handler: { _ in
+            okClicked = true
             NSLog("The \"OK\" alert occured.")
-        }))
+        }))*/
+        
+        alert.addAction(okAction)
         
         self.present(alert, animated: true, completion: nil)
+        while(!okClicked)
+        {
+            
+        }
     }
     
     @IBAction func touchButton(_ sender: RoundButton) {
-        
+        messageBox(messageTitle: "Test", messageAlert: "This is a test", messageBoxStyle: .alert, alertActionStyle: .`default`)
+        messageBox(messageTitle: "Test", messageAlert: "This is a 2 test", messageBoxStyle: .alert, alertActionStyle: .`default`)
         if(sender.currentState == .neutral){
             var incrementValue: Int8 = 1
             var isLegalMove = false
