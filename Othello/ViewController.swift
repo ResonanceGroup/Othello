@@ -50,6 +50,36 @@ class ViewController: UIViewController {
     
     private var p_gameModel: othelloModel = othelloModel()
     
+    private func updatePlayersTurnTextLabel()
+    {
+        switch p_player {
+        case .blackPlayer:
+            let attributesBlackText: [NSAttributedStringKey:Any] =
+                [
+                    .strokeWidth : 10.0,
+                    .strokeColor : UIColor.black
+                ]
+            let attributedStringBlackText = NSAttributedString(string: "Black Players Turn", attributes: attributesBlackText)
+            playersTurnText.attributedText = attributedStringBlackText
+            playersTurnCircleLabel.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            
+        case .whitePlayer:
+            let attributesWhiteText: [NSAttributedStringKey:Any] =
+                [
+                    .strokeWidth : 10.0,
+                    .strokeColor : UIColor.white
+            ]
+            let attributedStringWhiteText = NSAttributedString(string: "White Players Turn", attributes: attributesWhiteText)
+            playersTurnText.attributedText = attributedStringWhiteText
+                 playersTurnCircleLabel.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
+        
+        }
+    }
+
+    @IBOutlet weak var playersTurnText: UILabel!
+   
+    @IBOutlet weak var playersTurnCircleLabel: RoundLabel!
+    
     @IBOutlet weak var whitePiecesText: UILabel!
     
     @IBOutlet weak var p_blackPiecesText: UILabel!
@@ -96,7 +126,10 @@ class ViewController: UIViewController {
     @IBAction func touchButton(_ sender: RoundButton) {
         
         if(sender.currentState == .neutral){
+          
+          
             switch p_player{
+        
             case .blackPlayer:
                 sender.currentState = .black
                 
@@ -124,6 +157,7 @@ class ViewController: UIViewController {
                 p_blackPiecesText.text = String(p_blackCount)
                 whitePiecesText.text = String(p_whiteCount)
                 p_player = .whitePlayer
+                updatePlayersTurnTextLabel()
             case .whitePlayer:
                 sender.currentState = .white
                 
@@ -150,6 +184,7 @@ class ViewController: UIViewController {
                  p_blackPiecesText.text = String(p_blackCount)
                 whitePiecesText.text = String(p_whiteCount)
                 p_player = .blackPlayer
+                updatePlayersTurnTextLabel()
             }
         }
     }
@@ -176,6 +211,7 @@ class ViewController: UIViewController {
         
         whitePiecesText.text = String(p_whiteCount)
         p_blackPiecesText.text = String(p_blackCount)
+        updatePlayersTurnTextLabel()
         // THis is an addition to the file
     }
     
